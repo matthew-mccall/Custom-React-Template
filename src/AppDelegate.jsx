@@ -3,7 +3,6 @@ import {
     BrowserRouter,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home";
@@ -14,7 +13,7 @@ export const ThemeContext = React.createContext(
     {
         mode: "light",
         style: getTheme(),
-        updateTheme: newTheme => { }
+        updateTheme: () => { }
     }
 );
 
@@ -37,19 +36,19 @@ export default function AppDelegate(props) {
                     themeDarkAlt: '#2295ed',
                     themeDark: '#43a5ef',
                     themeDarker: '#72bbf4',
-                    neutralLighterAlt: '#2b2a29',
-                    neutralLighter: '#333231',
-                    neutralLight: '#41403f',
-                    neutralQuaternaryAlt: '#4a4847',
-                    neutralQuaternary: '#514f4e',
-                    neutralTertiaryAlt: '#6f6d6b',
+                    neutralLighterAlt: '#1c1b1a',
+                    neutralLighter: '#252423',
+                    neutralLight: '#343331',
+                    neutralQuaternaryAlt: '#3d3c3a',
+                    neutralQuaternary: '#454341',
+                    neutralTertiaryAlt: '#656260',
                     neutralTertiary: '#c8c8c8',
                     neutralSecondary: '#d0d0d0',
                     neutralPrimaryAlt: '#dadada',
                     neutralPrimary: '#ffffff',
                     neutralDark: '#f4f4f4',
                     black: '#f8f8f8',
-                    white: '#21201f',
+                    white: '#121111',
                 }
             }))
         } else {

@@ -7,7 +7,7 @@ export default function Footer(props) {
     const theme = useContext(ThemeContext)
 
     const styles = {
-        background: theme.style.palette.neutralLight,
+        background: theme.style.palette.neutralLighter,
         color: theme.style.palette.neutralDark
     };
 
